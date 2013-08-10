@@ -1,5 +1,6 @@
 <?php 
 	include('admin/config.php');
+	include('admin/baseDatos.php');
 	session_start();
  ?>
 <!DOCTYPE html>
@@ -195,21 +196,15 @@
 
 
 				</div>
+
 				<div id="content">
 					<h1>Welcome to the simplestyle_5 template</h1>
         			<p>
         				<?php 
-        				$conexion = new PDO(DB_DSN,DB_USUARIO,DB_PASSWORD);
-						$conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-						$sql = "SELECT texto FROM articulo";
-						$stmt = $conexion->prepare($sql);
-						$stmt->execute();
-						$result = $stmt->fetchAll();
+        				 $result = obtenerArticulos();
 						foreach($result as $row){
     						echo $row['texto'];
 						}
-
-
 
         				 ?>
         				

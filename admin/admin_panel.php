@@ -21,7 +21,11 @@
 				<div id="top">
 					<div class="left">
 						<p>Bienvenido, 
-							<strong><?php echo $_SESSION['usuario']  ?></strong> 
+							<strong><?php
+										if(isset($_SESSION['usuario'])) echo $_SESSION['usuario'] ; 
+										else header('Location: ../index.php');
+									?>
+							</strong> 
 							[ <a href="">logout</a> ]
 						</p>
 					</div>

@@ -84,7 +84,23 @@
 	$sql->execute();
 
   }
+  /**
+   * esta funcion sirve para obtener todos los articulos de la bases de datos
+   * devuelve el resultado de una consulta select* usando pdo
+   * de momento los campos que hay en la base de datos son :
+   * titulo
+   * texto
+   */
+  function obtenerArticulos(){
+  	$conexion = new PDO(DB_DSN,DB_USUARIO,DB_PASSWORD);
+	$conexion->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+	$sql = "SELECT * FROM articulo";
+	$stmt = $conexion->prepare($sql);
+	$stmt->execute();
+	$result = $stmt->fetchAll();
+	return $result;
 
+  }
   
 
   /*function setNuevoUsuario($nombreUsuario,$password){
