@@ -1,0 +1,208 @@
+/**************************
+	 ********** cabecera ******
+	 **************************/
+	 
+	 *{margin:0;}
+	 
+	 /************* div fila_superior*********/
+	 .fila_superior{
+	 	color: #C0BAB6;
+		background-color: #333332;
+	 }
+	 /*********** header contenedor**********/
+	 header{
+		display: block;
+		width: 1000px;/*no hay responsive*/
+		margin: 0 auto;
+		padding:20px 0;
+	 }
+	 /*************Titulo******************/
+
+	 header hgroup{
+	 	float:left;
+	 	margin:0 0 20px 0;
+	 }
+	 header hgroup h1,
+	 header hgroup h2{
+	 	font-weight: normal;
+	 	text-transform: none;
+	 }
+	 header hgroup h1{font-size: 36px};/*no hay responsive*/
+	 header hgroup h2{font-size: 13px}/*no hay responsive*/
+	
+	/** buscador**/
+
+	 header form{
+	 	display: block;
+	 	width: 290px;/*no ha responsive*/
+	 	float:right;
+	 	margin:20px 0;
+	 	padding:0;
+	 }
+	 header form input{
+	 	background-color: #232323;
+	 	color: #C0BAB6;
+	 	display:block;
+	 	float: left;
+	 	font-family: Georgia,"Times New Roman",Times,serif;
+	 	width:200px;/*no hay responsive*/
+	 	margin: 20px 0;
+	 	padding:5px;
+	 }
+	 header form #buscador{
+	 	display: block;
+	 	float:right;
+	 	width: 70px;/*no hay responsive*/
+	 	font-size: 12px;/*no hay responsive*/
+	 	font-weight: bold;
+	 	text-transform: uppercase;
+	 	color:white;
+	 	background: #FF9900;
+	 	border: none;
+	 }
+	 /*********** menu ****************/
+	 header nav{
+	 	display: block;
+	 	width: 100%;
+	 	margin:0;
+	 	padding:20px;
+	 	color:#C0BAB6; 
+	 	background-color:#232323;
+	 	clear:both;/*lo movemos abajo*/
+	 }
+	 header nav ul{
+	 	padding: 0 20px;
+	 }
+	 header nav ul li{
+	 	display: inline;
+	 	margin-right: 25px;
+	 	text-transform: uppercase;
+	 }
+	 nav ul li a{
+	 	color:#C0BAB6; 
+	 	/*background-color:#232323;*/
+	 	text-decoration: none;
+	 }
+	 nav ul li a:hover{
+	 	color:#FF9900; 
+	 	/*background: url('img/tweed.png');*/
+	 	background-color:#232323;
+	 	/*padding:10px 5px 10px 5px;
+	 	border-radius: 5px;
+		*/
+	 }
+	 /******************************************
+	 **************** contenido principal*******
+	 *******************************************/
+	 
+	 /*******************	CONTENEDOR PRINCIPAL ***************/
+	  .container{
+	 	display: block;
+	 	margin:0 auto;
+	 	width:1000px;
+	 	margin: 0 auto;
+	 	margin-top: 50px;
+		color:#666;
+	 }
+	 .container #contenido{
+	 	float:right;
+	 	width:700px;
+	 }
+	 
+	 /*******************   CONTENIDO ************************/
+	 .container #contenido section{
+	 	 margin:0 0 30px 0;
+	 	 display: block;
+	 }
+	 .container #contenido section .articulo_tipo1{
+	 	display: block;
+	 }
+	 .container #contenido section .articulo_tipo1 h2{
+	 	text-transform:uppercase;
+	 	color:#FF9900;
+	 	font-weight: normal;
+	 	margin-bottom: 10px;
+
+		clear:both;
+	 }
+	 .container #contenido section .articulo_tipo1 time{
+
+	 	font-size: 12px;
+	 }
+	 .container #contenido section .articulo_tipo1 p{
+	 	margin-top: 5px;
+	 }
+	 .container #contenido section .articulo_tipo1 .tags{
+	 	clear:both;
+	 	width:300px;
+	 	display: block;
+	 	padding-left: 5px;
+	 	color:#979797;
+	 	background: #ECECEC;
+	 	font-style:italic;
+	 	margin-bottom: 100px;
+	 }
+	 .container #contenido section .articulo_tipo1 .tags a{
+	 	
+	 	color:#0084B4;
+	 	background-color: #333332;
+	 	border-radius: 5px;
+	 	text-decoration: none;
+	 	display: block;
+		float:left;
+		padding: 4px 5px;
+		margin-right: 5px;
+		margin-top: 5px;
+	 	}
+	 	.container #contenido section .articulo_tipo1 .leer_mas{
+			margin-left: 5px;
+			margin-top: 5px;
+	 		float:left;
+	 		width: 100px;
+	 		clear:both;
+	 	}
+	 	.container #contenido section .articulo_tipo1 .leer_mas a{
+	 		text-decoration: none;
+	 		color:#FF9900;
+
+	 	}
+
+	 /******************BARRA LATERAL DERECHA****************/
+	 .container #columna_derecha{
+	 	
+	 	float:left;
+	 	width: 300px;
+	 	display: block;/*****/
+	 } 
+	 .etiquetas{
+	 	margin-top: 30px;
+	 }
+	 /*******panel de redes sociales*******************/
+	 .widget_red_social {
+	 	width: 260px;
+	 	background: url('img/fondo_redes_sociales.png');
+	 	border: 1px solid #CDCCCC;
+	 	border-radius:5px;
+	 	margin-top: 10px;
+	 	margin-bottom: 15px;
+	 	
+	 }
+	 .widget_red_social a {
+	 	margin-top: 15px;
+	 	margin-right: 35px;
+	 	text-decoration: none;
+	 	float:right;
+	 	color:#FF9900;
+	 	font-family: arial;
+	 	font-weight: bold;
+	 }
+	 #twitter a:hover{
+	 	color:#019ad2;
+	 }
+	 #facebook a:hover{
+	 	color:#3b5998;
+	 }
+	 .widget_red_social img{
+	 	margin-left: 10px;
+	 }
+	 

@@ -7,160 +7,133 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Mi pagina web</title>
+	<title>tutoinformatica</title>
+	<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-	<style>
-	*{margin:0;}
-	/****************** cabecera ********************/
-		header{
-			background: yellow;
-			width:100%;
-			height: 150px;
-		}
-		.titulo_y_logo{
-			background: purple;
-			color:white;
-			float:left;
-			width:50%;
-			height: 100px;
-		}
-		.logo{
-			background: white;
-			width:50%;
-			color:black;
-			float:left;
-		}
-		.titulo{
-			background: black;
-			color:white;
-			width:50%;
-			float:right;
-		}
-		.redes_sociales_y_buscador{
-			background: red;
-			color:white;
-			float:right;
-			width:50%;
-			height: 100px;
-		}
-		.redes_sociales{
-			width:100%;
-			background: blue;
-		}
-		.buscador{
-			width:100%;
-			background: yellow;	
-		}
-		.menu{
-			width:100%;
-			height: 50px;
-			background: orange;
-		}
-		/************** contenido ***********/
-		.contenedor_contenido{
-			background: blue;
-			width:100%;
-			overflow: hidden;
-		}
-		.contenido{
-			float:left;
-			width:70%;
-			margin:0 auto;
-			background: orange;
-			
-		}
-		.barra_lateral{
-			float:right;
-			background: purple;
-			width: 30%;
-		}
-		/****************** pie de pagina*************/
-		footer{
-			background: red;
-		}
-
-	</style>
-	<!-- contenedor o wapper de la pagina-->
-	<div class="wrap">
-			<!--- cabecera de la pagina-->
-			<header>
-				<div class="titulo_y_logo">
-					<div class="logo">
-						logo</br>
-						logo
-						logo
-						logo
-						logo
-						logo
-						logo
-
-					</div>
-					<div class="titulo">
-						titulo de la web
-					</div>
-				</div>
-				<div class="redes_sociales_y_buscador">
-					<div class="redes_sociales">
-						redes sociales
-					</div>
-					<div class="buscador">
-						buscador
-					</div>
-				</div>
-				<nav class="menu">
-					Menu
-				</nav>
-			</header>
-			<!--contenido de la pagina-->
-			<div class="contenedor_contenido">
-				<div class="contenido">
-					
-					<article class="articulo_simple">
-						<section>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, 
-								voluptatibus, a iusto consectetur maxime minus minima sit animi nesciunt 
-								blanditiis omnis natus 
-								mollitia reprehenderit necessitatibus aut molestias nihil ut dolor!</p>
-						</section>
-					</article>
-					<article class="articulo_simple">
-						<section>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, 
-								voluptatibus, a iusto consectetur maxime minus minima sit animi nesciunt 
-								blanditiis omnis natus 
-								mollitia reprehenderit necessitatibus aut molestias nihil ut dolor!</p>
-						</section>
-					</article>
-					
-				</div>
-				<aside class="barra_lateral">
-					<aside class="tags">
-						<h1>tags</h1>
-						<ul>
-							<li>kasdmaskmd</li>
-							<li>algo</li>
-							<li>algo</li>
-							<li>algo</li>
-							<li>algo</li>
-						</ul>
-					</aside>
-					<aside class="enlaces_externos">
-						<h1>enlaces a otras webs</h1>
-						<ul>
-							<li>kasdmaskmd</li>
-							<li>algo</li>
-							<li>algo</li>
-							<li>algo</li>
-							<li>algo</li>
-						</ul>
-					</aside>
-				</aside>
-			</div>
-			<footer>pie de pagina</footer>
+	<!--CABECERA PRINCIPAL-->
+	<div class="fila_superior">
+		<header class = "clear">
+				<hgroup>
+					<h1>tutoinformatica</h1>
+					<h2>donde encontraras solucion a tus dudas</h2>
+				</hgroup>
+					<form action="#" method = "post">
+						<input type="text" value = "que quieres buscar">
+						<input type="submit" id="buscador" value = "submit">
+					</form>	
+				<nav id="menu">
+					<ul>
+						<li><a href="#">algoritmos</a></li>
+						<li><a href="#">robotica</a></li>
+						<li><a href="#">inteligencia artificial</a></li>
+						<li><a href="#">otros</a></li>
+					</ul>
+				</nav>		
+		</header>
 	</div>
+	<!--FINAL CABECERA PRINCIPAL-->
+	<!--CONTENEDOR PRINCIPAL DEL CONTENIDO-->
+	<div class="container">
+		<!-- BARRA LATERAL DERECHA-->
+		<aside id="columna_derecha">
+				
+				<div id = "twitter"class = "cont_redes_sociales">
+					<div class="widget_red_social">
+						<a href="#">Siguenos en twitter</a>
+						<img src="img/redes_sociales/twitter.png" alt="sigueme en twitter" tittle="Sigueme en twitter">
+					</div>
+				</div>
+				<div id = "facebook" class = "cont_redes_sociales">
+					<div class="widget_red_social">
+						<a href="#">Sigueme en facebook</a>
+						<img src="img/redes_sociales/facebook.png" alt="sigueme en facebook" tittle="Sigueme en facebook">
+					</div>
+				</div>
 
-
+				<nav class="etiquetas">	
+					<h2>etiquetas</h2>
+					
+					<ul>
+						<li><a href="#">kasdklasld</a></li>
+						<li><a href="#">kamsdmaskd</a></li>
+						<li><a href="#">asklmdkasmd</a></li>
+					</ul>
+				</nav>
+				<nav>
+					<h2>enlaces externos</h2>
+					<ul>
+						<li><a href="#">kasdklasld</a></li>
+						<li><a href="#">kamsdmaskd</a></li>
+						<li><a href="#">asklmdkasmd</a></li>
+					</ul>
+				</nav>
+		</aside>
+		<!-- FINAL BARRA LATERAL -->
+		<!--- CONTENIDO -->
+		<div id="contenido">
+			<section >
+				<article class = "articulo_tipo1">
+					<h2>titulo del articulo</h2>
+					<time datetime="2012-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2012 @08:15:00</time>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, in, 
+						aliquam, odit, totam consectetur incidunt voluptates eveniet mollitia ipsum 
+						dolores quaerat ipsa sit architecto inventore odio quis soluta dolore. Quod.
+					</p>
+					<div class = "leer_mas"><a href="#">leer mas ...</a>
+					</div>
+					<div class="tags">
+						<a href="#">#algoritmos</a> 
+						<a href="#">#a estrella</a>
+						<a href="#">#robotica</a> 
+						<a href="#">#tag 2</a>
+					</div>
+				</article>
+				<article class = "articulo_tipo1">
+					<h2>titulo del articulo</h2>
+					<time datetime="2012-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2012 @08:15:00</time>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, in, 
+						aliquam, odit, totam consectetur incidunt voluptates eveniet mollitia ipsum 
+						dolores quaerat ipsa sit architecto inventore odio quis soluta dolore. Quod.
+					</p>
+					<div class = "leer_mas">
+						<a href="#">leer mas ...</a>
+					</div>
+					<div class="tags">
+						<a href="#">#algoritmos</a> 
+						<a href="#">#a estrella</a>
+						<a href="#">#robotica</a> 
+						<a href="#">#tag 2</a>
+						<a href="#">#tag 1</a> 	
+						<a href="#">#tag 2</a>
+						<a href="#">#tag 1</a> 
+					</div>
+				</article>
+				<article class = "articulo_tipo1">
+					<h2>titulo del articulo</h2>
+					<time datetime="2012-04-06T08:15+00:00">Friday, 6<sup>th</sup> April 2012 @08:15:00</time>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, in, 
+						aliquam, odit, totam consectetur incidunt voluptates eveniet mollitia ipsum 
+						dolores quaerat ipsa sit architecto inventore odio quis soluta dolore. Quod.
+					</p>
+					<div class = "leer_mas">
+						<a href="#">leer mas ...</a>
+					</div>
+					<div class="tags">
+						<a href="#">#algoritmos</a> 
+						<a href="#">#a estrella</a>
+						<a href="#">#robotica</a> 
+						<a href="#">#tag 2</a>
+						<a href="#">#tag 1</a> 	
+						<a href="#">#tag 2</a>
+						<a href="#">#tag 1</a> 
+					</div>
+				</article>
+			</section>
+		</div>
+		<!-- FINAL DEL CONTENIDO -->
+	</div>
 	
 </body>
 </html>
+	
