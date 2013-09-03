@@ -5,7 +5,7 @@
 	 * 
 	 */
 	 
-	 include('config.php');
+	 //include('config.php');
 	 session_start(); 
 ?>
 	<html>

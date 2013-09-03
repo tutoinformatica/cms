@@ -180,7 +180,7 @@
 	 /*******panel de redes sociales*******************/
 	 .widget_red_social {
 	 	width: 260px;
-	 	background: url('img/fondo_redes_sociales.png');
+	 	background: url('../img/fondo_redes_sociales.png');
 	 	border: 1px solid #CDCCCC;
 	 	border-radius:5px;
 	 	margin-top: 10px;
